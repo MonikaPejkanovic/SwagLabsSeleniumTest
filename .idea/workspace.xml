@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d02c2135-0edd-4886-8aff-fe23f01f42eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    <list default="true" id="d02c2135-0edd-4886-8aff-fe23f01f42eb" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/PlpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/PlpTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/Reset.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -38,66 +36,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.swagLabsProject [clean,install].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.Che.ShopingCartBadgeTest.executor": "Run",
-    "TestNG.Che.executor": "Run",
-    "TestNG.Checkout.ShopingCartBadgeTest.executor": "Run",
-    "TestNG.Checkout.ShopingCatBadgeTest.executor": "Run",
-    "TestNG.Checkout.addRemoveButtons.executor": "Run",
-    "TestNG.Checkout.backHomeTest.executor": "Run",
-    "TestNG.Checkout.backto.executor": "Run",
-    "TestNG.Checkout.checkout.executor": "Run",
-    "TestNG.Checkout.checkoutTest.executor": "Run",
-    "TestNG.Checkout.executor": "Run",
-    "TestNG.FooterTests.clickOnLinkedin.executor": "Run",
-    "TestNG.FooterTests.clickOnTwitter.executor": "Run",
-    "TestNG.FooterTests.executor": "Run",
-    "TestNG.Login.executor": "Run",
-    "TestNG.Login.logout.executor": "Run",
-    "TestNG.LoginAndLogout.executor": "Run",
-    "TestNG.LoginAndLogout.logout.executor": "Run",
-    "TestNG.PlpTests.aboutButtonTest.executor": "Run",
-    "TestNG.PlpTests.allItemButtonTest.executor": "Run",
-    "TestNG.PlpTests.clickOnFacebook.executor": "Run",
-    "TestNG.PlpTests.clickOnLinkedin.executor": "Run",
-    "TestNG.PlpTests.clickOnTwitter.executor": "Run",
-    "TestNG.PlpTests.executor": "Run",
-    "TestNG.Reset.executor": "Run",
-    "TestNG.Sorting.executor": "Run",
-    "TestNG.Sorting.sortingTest.executor": "Run",
-    "TestNG.Test.executor": "Run",
-    "TestNG.ValidLogIn.ValidLogIn.executor": "Run",
-    "TestNG.ValidLogIn.executor": "Run",
-    "TestNG.ValidLogIn.inValidLogIn.executor": "Run",
-    "TestNG.ValidLogIn.test.executor": "Run",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.swagLabsProject [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.Che.ShopingCartBadgeTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Che.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Checkout.ShopingCartBadgeTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Checkout.ShopingCatBadgeTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Checkout.addRemoveButtons.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Checkout.backHomeTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Checkout.backto.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Checkout.checkout.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Checkout.checkoutTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Checkout.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FooterTests.clickOnLinkedin.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FooterTests.clickOnTwitter.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FooterTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Login.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Login.logout.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginAndLogout.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginAndLogout.logout.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PlpTests.aboutButtonTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PlpTests.allItemButtonTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PlpTests.clickOnFacebook.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PlpTests.clickOnLinkedin.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PlpTests.clickOnTwitter.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PlpTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Reset.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Sorting.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Sorting.sortingTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Test.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ValidLogIn.ValidLogIn.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ValidLogIn.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ValidLogIn.inValidLogIn.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ValidLogIn.test.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.Test">
-    <configuration name="Che" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="swagLabsProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.Che" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}</component>
+  <component name="RunManager" selected="TestNG.PlpTests">
     <configuration name="Checkout" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="swagLabsProject" />
       <extension name="coverage">
@@ -115,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Checkout.ShopingCatBadgeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PlpTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="swagLabsProject" />
       <extension name="coverage">
         <pattern>
@@ -124,8 +105,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.Checkout" />
-      <option name="METHOD_NAME" value="ShopingCatBadgeTest" />
+      <option name="MAIN_CLASS_NAME" value="Test.PlpTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlpTests.aboutButtonTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="swagLabsProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.PlpTests" />
+      <option name="METHOD_NAME" value="aboutButtonTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -133,7 +131,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Reset" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PlpTests.allItemButtonTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="swagLabsProject" />
       <extension name="coverage">
         <pattern>
@@ -142,8 +140,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.Reset" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Test.PlpTests" />
+      <option name="METHOD_NAME" value="allItemButtonTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -168,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PlpTests" />
+        <item itemvalue="TestNG.PlpTests.allItemButtonTest" />
+        <item itemvalue="TestNG.PlpTests.aboutButtonTest" />
         <item itemvalue="TestNG.Test" />
         <item itemvalue="TestNG.Checkout" />
-        <item itemvalue="TestNG.Checkout.ShopingCatBadgeTest" />
-        <item itemvalue="TestNG.Reset" />
-        <item itemvalue="TestNG.Che" />
       </list>
     </recent_temporary>
   </component>
@@ -197,5 +196,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

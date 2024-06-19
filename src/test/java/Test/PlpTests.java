@@ -13,11 +13,10 @@ import java.time.Duration;
 public class PlpTests extends BaseTest {
 
     @BeforeMethod
-    public void pageSetUp() throws InterruptedException {
+    public void pageSetUp() {
         driver.manage().window().maximize();
         driver.get("https://www.saucedemo.com/");
         logInPage.login(logInPage.getValidUsername(), logInPage.getValidPassword());
-        resetAppState();
     }
 
 
@@ -51,7 +50,7 @@ public class PlpTests extends BaseTest {
 
     @Test
     public void aboutButtonTest(){
-
+        plp.clickOnHamburgerMenu();
         plp.clickOnHamburgerItem("About");
         Assert.assertEquals(driver.getCurrentUrl(), "https://saucelabs.com/");
     }
