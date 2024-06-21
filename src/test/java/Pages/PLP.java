@@ -11,29 +11,24 @@ public class PLP {
     public PLP(WebDriver driver) {
         this.driver = driver;
     }
-    WebElement inventoryList;
-    String mainWindowHandle;
-    List<WebElement> lista1;
-    WebElement addToCartBackpack;
+    public List<WebElement> inventoryList;
+    public String mainWindowHandle;
+    public WebElement addToCartBackpack;
     public WebElement shopingCartBadge;
     public WebElement removeBackpackButton;
-    public WebElement addLightButton;
+    public WebElement addBikeLightButton;
     public WebElement cartIcon;
     public WebElement hamburgerMenu;
-    public WebElement resetAppState;
     public List<WebElement>hamburgerList;
-    public WebElement allItemsButton;
-    public WebElement getAllItemsButton() {
-    return driver.findElement(By.id("inventory_sidebar_link"));
-    }
-    public WebElement getAddToCartBackpack() {
-        return driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
-    }
-    public List<WebElement> getLista1() {
+    public List<WebElement>productsNameList;
+    public List<WebElement> getProductsNameList() {
         return driver.findElements(By.className("inventory_item_name"));
     }
-    public WebElement getInventoryList() {
-        return driver.findElement(By.className("inventory_list"));
+    public WebElement getAddBackpackToCartButton() {
+        return driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
+    }
+    public List<WebElement> getInventoryList() {
+        return driver.findElements(By.className("inventory_list"));
     }
     public WebElement getAddLightButton() {
         return driver.findElement(By.id("add-to-cart-sauce-labs-bike-light"));
@@ -47,9 +42,6 @@ public class PLP {
     public WebElement getHamburgerMenu() {
         return driver.findElement(By.id("react-burger-menu-btn"));
     }
-    public WebElement getResetAppState() {
-        return  driver.findElement(By.id("reset_sidebar_link"));
-    }
     public List<WebElement> getHamburgerList() {
         return driver.findElements(By.className("bm-item"));
     }
@@ -57,7 +49,7 @@ public class PLP {
         return driver.findElement(By.cssSelector("button[name=remove-sauce-labs-backpack]"));
     }
 
-    //-----------------------------------------------------------------
+    //----------------------------------------------------------------------------
     public void clickOnHamburgerItem(String name){
        for( WebElement item : getHamburgerList()){
            if(item.getText().equals(name)){
@@ -66,8 +58,8 @@ public class PLP {
            }
        }
     }
-    public void addToCartBackpack() {
-        getAddToCartBackpack().click();
+    public void addBackpackToCart() {
+        getAddBackpackToCartButton().click();
     }
     public void removeBackpack(){
         getRemoveBackpackButton().click();
@@ -84,12 +76,5 @@ public class PLP {
     }
     public void clickOnHamburgerMenu(){
         getHamburgerMenu().click();
-    }
-    public void clickOnAllItemsButton(){
-        getAllItemsButton().click();
-
-    }
-    public void clickOnResetAppState(){
-        getResetAppState().click();
     }
 }

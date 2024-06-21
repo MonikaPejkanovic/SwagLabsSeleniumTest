@@ -44,7 +44,8 @@ public class BaseTest {
     }
     public void resetAppState() {
         plp.clickOnHamburgerMenu();
-        plp.clickOnResetAppState();
+        plp.clickOnHamburgerItem("Reset App State");
+        driver.navigate().refresh();
     }
     public void waitForAllElementsVisibility(List<WebElement> elements) {
         wait.until(ExpectedConditions.visibilityOfAllElements(elements));

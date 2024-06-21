@@ -17,7 +17,7 @@ public class LoginAndLogout extends BaseTest {
     @Test
     public void validLogIn(){
         logInPage.login(logInPage.getValidUsername(), logInPage.getValidPassword());
-        Assert.assertTrue(plp.getInventoryList().isDisplayed());
+        Assert.assertTrue(sortingMenu.getSortingButton().isDisplayed());
     }
 
     @Test
@@ -43,7 +43,7 @@ public class LoginAndLogout extends BaseTest {
         validLogIn();
         plp.clickOnHamburgerMenu();
         plp.clickOnHamburgerItem("Logout");
-        Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/");
+        Assert.assertTrue(logInPage.getUsernameField().isDisplayed());
     }
 
     @AfterMethod

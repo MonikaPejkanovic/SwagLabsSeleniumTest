@@ -17,20 +17,19 @@ public class Checkout extends BaseTest {
     }
 
     @Test
-    public void addToCartReoveButton(){
-        plp.addToCartBackpack();
+    public void addToCartRemoveButton() throws InterruptedException {
+        plp.addBackpackToCart();
+        plp.badgeCheck("1");
         plp.removeBackpack();
+        Assert.assertTrue(plp.getAddBackpackToCartButton().isDisplayed());
     }
 
     @Test
-    public void ShopingCatBadgeTest() throws InterruptedException {
-        plp.addToCartBackpack();
+    public void ShopingCartBadgeTest() throws InterruptedException {
+        plp.addBackpackToCart();
         plp.badgeCheck("1");
         plp.addBikeLightToCart();
         plp.badgeCheck("2");
-        plp.removeBackpack();
-
-
     }
 
     @Test
@@ -50,11 +49,18 @@ public class Checkout extends BaseTest {
     public void backHomeTest(){
         checkoutTest();
         completePage.clickOnBackHomeButton();
-        Assert.assertTrue(plp.getInventoryList().isDisplayed());
+        Assert.assertTrue(sortingMenu.getSortingButton().isDisplayed());
     }
 
-
-
+    @Test
+    public void checkoutWithoutRequiredInfo(){
+        plp.addBikeLightToCart();
+        plp.clickOnCart();
+        Assert.assertTrue(yourCart.isTheRightProductInCart("Sauce Labs Bike Light"));
+        yourCart.clickOnCheckoutButton();
+        yourInformation.clickOnContinue();
+        Assert.assertTrue(yourInformation.getErrorMessage().isDisplayed());
+    }
     @AfterMethod
     public void clean(){
         driver.manage().deleteAllCookies();

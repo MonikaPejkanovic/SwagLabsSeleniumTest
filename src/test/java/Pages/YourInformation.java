@@ -15,6 +15,11 @@ public class YourInformation {
     public WebElement lastNameField;
     public WebElement continueButton;
     public WebElement postalCodeField;
+    public WebElement errorMessage;
+
+    public WebElement getErrorMessage() {
+        return driver.findElement(By.cssSelector("h3[data-test=error"));
+    }
 
     public WebElement getFirstNameField() {
         return driver.findElement(By.id("first-name"));

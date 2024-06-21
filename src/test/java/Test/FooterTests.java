@@ -20,9 +20,10 @@ public class FooterTests extends BaseTest {
     }
 
     @Test
-    public void clickOnTwitter(){
+    public void clickOnTwitter() throws InterruptedException {
         footer.clickOnTwitter();
         switchToNewWindow();
+        Thread.sleep(3000);
         Assert.assertEquals(driver.getCurrentUrl(), "https://x.com/saucelabs");
 
     }
